@@ -47,7 +47,9 @@ The following Git commands were practiced and demonstrated during the project li
 - **Issue Tracking:** Creating issues and linking them with pull requests (e.g., Issue #6).
 - **Pull Requests & Code Reviews:** Collaborative code integration and review processes between team members.
 - **Branch Protection & Merging:** Maintaining main branch integrity and clean merge history.
-- **Releases:** Publishing official GitHub releases for stable project versions (`v1.0.0`).
+- **Releases:** Publishing official GitHub releases for stable project versions (`v1.0.0`).   
+
+
 
 ## 🚀 How to Run the Project
 
