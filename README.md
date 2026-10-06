@@ -2,11 +2,11 @@
 
 ## 📝 Project Description
 
-The Student Task Manager is a collaborative C++ software project designed to help students efficiently manage, organize, and track their daily academic tasks, assignments, and to-do lists. The main objective of this project is to provide students with practical experience in robust task management alongside version control and team collaboration.
+The Student Task Manager is a collaborative  software project designed to help students efficiently manage, organize, and track their daily academic tasks, assignments, and to-do lists. The main objective of this project is to provide students with practical experience in robust task management alongside version control and team collaboration.
 
 ## 👥 Team Members
 
-- **Fasiha Humayum** (Roll No: BSDSF25M040)
+- **Fasiha Humayun** (Roll No: BSDSF25M040)
 - **Ayesha Fatima** (Roll No: BSDSF25M029)
 
 ## ✨ Core Features
@@ -18,7 +18,7 @@ The Student Task Manager is a collaborative C++ software project designed to hel
 
 ## 🛠️ Technologies & Tools Used
 
-- **Programming Language:** C++
+- **Programming Language:** HTML,CSS
 - **Version Control System:** Git & GitHub
 - **Development Environment:** Visual Studio Code & Command Prompt (CMD)
 
