@@ -24,7 +24,7 @@ A collaborative C++ project designed to help students efficiently manage, organi
 ## 👥 Contributors
 
 - **Ayesha Fatima** (BSDSF25M029)
-- **Fasiha**
+- **Fasiha HUMAYUN**(BSDSF25M040)
 
 ---
 
