@@ -2,14 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Task Manager</title>
+    <!-- Linked external CSS style sheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Student Task Manager</h1>
-    
-    <form id="task-form">
-        <input type="text" placeholder="Enter task title" required>
-        <button type="submit">Add Task</button>
-    </form>
+    <div class="container">
+        <h1>Student Task Manager 📚</h1>
+        <p class="team-info">Team: Fasiha Humayun(BSDSF25M040) & Ayesha Fatima (BSDSF25M029) </p>
+
+        <!-- Task Input Form -->
+        <div class="task-form-section">
+            <h2>Add New Task</h2>
+            <form id="taskForm">
+                <input type="text" id="taskTitle" placeholder="Task Title..." required>
+                <textarea id="taskDesc" placeholder="Task Description..." required></textarea>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+
+        <!-- Task Search Section -->
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Search tasks by title...">
+        </div>
+
+        <!-- Task Display List -->
+        <div class="task-list-section">
+            <h2>Tasks List</h2>
+            <ul id="taskList">
+                <!-- Dynamic tasks will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Basic interactivity for adding and searching tasks
+        const taskForm = document.getElementById('taskForm');
+        const taskList = document.getElementById('taskList');
+        const searchInput = document.getElementById('searchInput');
+
+        taskForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const title = document.getElementById('taskTitle').value;
+            const desc = document.getElementById('taskDesc').value;
+
+            const li = document.createElement('li');
+            li.innerHTML = `<strong>${title}</strong>: ${desc} <button onclick="this.parentElement.remove()">Delete</button>`;
+            taskList.appendChild(li);
+
+            taskForm.reset();
+        });
+
+        searchInput.addEventListener('input', function(e) {
+            const term = e.target.value.toLowerCase();
+            const items = taskList.getElementsByTagName('li');
+            Array.from(items).forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(term) ? '' : 'none';
+            });
+        });
+    </script>
 </body>
 </html>
