@@ -58,6 +58,6 @@ The following Git commands were practiced and demonstrated during the project li
    git clone [https://github.com/fasiha-h/student-task-manager.git](https://github.com/fasiha-h/student-task-manager.git)
    ```
 
-![Figure 35: Final GitHub Repository](35.png)
+
 
 ![student task managment](taskpic.png)
